@@ -49,11 +49,11 @@
 
 body {
   font-family: "KlinicSlab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   line-height: 1.5;
   color: #454441;
-  background-color: #454545;
+  background-color: #1A1A1A;
 }
 
 h2 {
@@ -76,21 +76,19 @@ span.thirdparty {
 }
 
 span {
-  font-family: "KlinicSlab";
-  font-size: 40px;
   color: #878580;
 }
 /* division design */
 
 .ng {
   background-color: #1A1A1A;
-  max-width: 1000px;
+  max-width: auto;
   margin: 0 auto;
 }
 
 .ng-header {
   background-color: #fff;
-  height: 125px;
+  height: auto;
 }
 
 .ng-gap {
@@ -132,15 +130,33 @@ span {
 
 .ng-content {
   background-color: #fff;
-  height: 200px;
+  height: auto;
 }
 
 .ng-hacker {
   background-color: #fff;
-  height: 100px;
+  height: auto;
 }
 
 .ng-hacker h2 {
   font-size: 74px;
   color: #009e00;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 24px;
+  }
+ 
+  .ng-gap {
+  height: 50px;
+  }
+
+  .ng-hacker h2 {
+  font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
 }
